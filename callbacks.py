@@ -3,7 +3,7 @@ from utils.data_loader import load
 import plotly.graph_objects as go
 import plotly.io as pio
 
-pio.templates.default = 'plotly_white'
+pio.templates.default = 'plotly_dark'
 
 def register_callbacks(app):
     @app.callback(
