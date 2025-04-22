@@ -2,11 +2,12 @@ import dash_bootstrap_components as dbc
 from dash import dcc
 from dash import dcc, html
 
+
 def interface():
     return dbc.Container([
     dbc.NavbarSimple(
-        brand="Состояния воздуха в городе",
-        brand_style={"color": "#000000", 'fontWeigt': 'bold', 'textAlign': 'center'},
+        brand="Показатели качества воздуха в городе",
+        brand_style={"color": "#000000", 'fontSize': '34px', 'fontFamily': 'Arial'},
         style={
             'background':'linear-gradient(to bottom, #84fab0, #8fd3f4)'
         },
@@ -18,8 +19,8 @@ def interface():
         dbc.Col(
             dbc.Card(id='city_air_conditions', body=True, style={'background': 'linear-gradient(to right, #84fab0, #8fd3f4)'}), width=6, xs=12, md=6),
         dbc.Col([dbc.Input(id='city_name', value='Санкт-Петербург', type='text', placeholder='Укажите город',debounce=True,
-                           style={'background': 'linear-gradient(to left, #84fab0, #8fd3f4)'})]
-            , className="mb-3")]),
+                           style={'background': 'linear-gradient(to left, #84fab0, #8fd3f4)', 'fontSize': '16px', 'fontFamily': 'Arial'})]
+            , className="mb-3", style={'font-size': '16px','fontFamily': 'Arial'})]),
     html.Div(style={'height': '10px'}),
 
     dbc.Row([
