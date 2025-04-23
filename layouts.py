@@ -7,7 +7,7 @@ def interface():
     return dbc.Container([
     dbc.NavbarSimple(
         brand="Показатели качества воздуха в городе",
-        brand_style={"color": "#000000", 'fontSize': '34px', 'fontFamily': 'Arial'},
+        brand_style={"color": "#000000", 'fontSize': '30px', 'fontFamily': 'Arial', 'margin': 'auto', 'width': '100%', 'textAlign': 'center'},
         style={
             'background':'linear-gradient(to bottom, #84fab0, #8fd3f4)'
         },
